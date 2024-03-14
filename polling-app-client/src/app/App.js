@@ -92,11 +92,8 @@ class App extends Component {
     
     return (
         <Layout className="app-container">
-          <AppHeader isAuthenticated={this.state.isAuthenticated} 
-            currentUser={this.state.currentUser} 
-            onLogout={this.handleLogout} />
-
           <Content className="app-content">
+            <h1>ttt</h1>
             <div className="container">
               <Switch>      
                 <Route exact path="/" 
@@ -114,6 +111,10 @@ class App extends Component {
               </Switch>
             </div>
           </Content>
+          <h1>TTT2</h1>
+          <AppHeader isAuthenticated={this.state.isAuthenticated} 
+            currentUser={this.state.currentUser} 
+            onLogout={this.handleLogout} />
         </Layout>
     );
   }

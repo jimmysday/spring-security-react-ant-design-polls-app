@@ -152,9 +152,13 @@ class PollList extends Component {
                 handleVoteSubmit={(event) => this.handleVoteSubmit(event, pollIndex)} />)            
         });
 
+        console.log(pollViews)
+
         return (
             <div className="polls-container">
+                <h1>my poll</h1>
                 {pollViews}
+                <h1>end poll</h1>
                 {
                     !this.state.isLoading && this.state.polls.length === 0 ? (
                         <div className="no-polls-found">

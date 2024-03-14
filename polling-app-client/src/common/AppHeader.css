@@ -1,20 +1,6 @@
-.app-title {
-    float: left;
-  }
-  
-  .app-title a {
-    text-decoration: none;
-    line-height: 64px;
-    font-size: 21px;
-    display: inline-block;
-  }
-  
-  .app-title a:hover {
-    text-decoration: none;
-  }
-  
   .app-header {
-    position: fixed;
+    position:fixed;
+    bottom:10px;
     width: 100%;
     box-shadow: 0 2px 8px #f0f1f2;
     z-index: 10;
@@ -22,7 +8,10 @@
   }
   
   .app-menu {
-    float: right;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 252, 250);
+    border-radius: 30px;
   }
   
   .app-menu > li {
@@ -63,11 +52,16 @@
   }
   
   .nav-icon {
-    font-size: 20px;
+    margin-top: 8px;
+    font-size:xx-large;
   }
 
   .poll-icon {
     margin-top: -4px;
+  
+    background-color: transparent;
+    border: 0px;
+    font-size:xx-large;
   }
 
 @media (max-width: 768px) {

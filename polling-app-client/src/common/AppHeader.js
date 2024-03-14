@@ -26,12 +26,23 @@ class AppHeader extends Component {
           menuItems = [
             <Menu.Item key="/">
               <Link to="/">
-                <Icon type="home" className="nav-icon" />
+              <button class="btn poll-icon"><i class="fa fa-map-marker"></i></button>
               </Link>
             </Menu.Item>,
             <Menu.Item key="/poll/new">
             <Link to="/poll/new">
-              <img src={pollIcon} alt="poll" className="poll-icon" />
+            <button class="btn poll-icon"><i class="fa fa-flag"></i></button>
+            </Link>
+          </Menu.Item>,
+           <Menu.Item key="/poll/new">
+           <Link to="/poll/new">
+           <button class="btn poll-icon"><i class="fa fa-pencil"></i></button>
+           </Link>
+         </Menu.Item>,
+          
+            <Menu.Item key="/poll/new">
+            <Link to="/poll/new">
+            <button class="btn poll-icon"><i class="fa fa-photo"></i></button>
             </Link>
           </Menu.Item>,
           <Menu.Item key="/profile" className="profile-menu">
@@ -54,9 +65,6 @@ class AppHeader extends Component {
         return (
             <Header className="app-header">
             <div className="container">
-              <div className="app-title" >
-                <Link to="/">Polling App</Link>
-              </div>
               <Menu
                 className="app-menu"
                 mode="horizontal"

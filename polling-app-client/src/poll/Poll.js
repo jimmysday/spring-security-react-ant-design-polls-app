@@ -93,6 +93,7 @@ class Poll extends Component {
                             </span>
                         </Link>
                     </div>
+                    <h1>pool 001</h1>
                     <div className="poll-question">
                         {this.props.poll.question}
                     </div>
